@@ -1,0 +1,88 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: rgb(236, 236, 236);
+    }
+    
+    h1 {
+        font-size: 6em;
+        text-align: center;
+    }
+    
+    nav {
+        font-size: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(184, 184, 184);
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        padding: 10px;
+        margin: 0 -0.1em;
+    }
+    
+    ul,
+    li {
+        display: inline;
+        margin: 0;
+        font-size: large;
+        padding-left: 20px;
+        text-shadow: 1em;
+    }
+    
+    ul {
+        flex-grow: 1;
+        max-width: 50%;
+        display: flex;
+        justify-content: left;
+    }
+    
+    @media (max-width:500px) {
+        nav,
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        margin-left: 10px;
+        display: flexbox;
+        text-shadow: 10%;
+    }
+    
+    a:hover {
+        border: 5px solid rgb(84, 127, 245);
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+        transition: 200ms;
+    }
+    
+    div a:hover {
+        border: 5px solid rgb(151, 151, 151);
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+    }
+    
+    b {
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 5px;
+        display: flex;
+        flex-grow: 0.5;
+    }
+    
+    .icons {
+        display: flex;
+        flex-grow: 0.5;
+        justify-content: space-evenly;
+    }
