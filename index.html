@@ -13,30 +13,157 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
-    <nav>
-        <b>Tiniyo</b>
-        <ul>
-            <li>
-                <a href="#Home">Incidents</a>
-            </li>
-            <li>
-                <a href="#Home">People</a>
-            </li>
-        </ul>
-        <div class="icons">
-            <a href="#signup"><i class="far fa-question-circle"></i></a>
-            <a href="#signup"><i class="fas fa-gift"></i></a>
-            <a href="#signup"><i class="fab fa-buromobelexperte"></i></a>
-            <a href="#signup"><i class="fas fa-user"></i></a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Tiniyo</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Incidents</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">People</a></li>
+                </ul>
+                <div class="icons">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-gift" aria-hidden="true"></i></a>
+                            <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
-    <h1>Tiniyo temp h1</h1>
+    <div class="grids">
+        <div class="item Lside">
+            <hr>
+            <table class="Incidents_table">
+                <tr>
+                    <th>Your open incidents</th>
+                    <th>All open incidents</th>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-primary">
+                            Notifications <span class="badge badge-light">4</span>
+                          </button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary">
+                            Notifications <span class="badge badge-light">4</span>
+                            </button>
+                    </td>
 
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-primary">
+                        Notifications <span class="badge badge-light">4</span>
+                      </button></td>
+                    <td><button type="button" class="btn btn-primary">
+                        Notifications <span class="badge badge-light">4</span>
+                      </button></td>
+                </tr>
+            </table>
+            <hr>
+            <div class="disabled_buttons">
+                <button type="button" class="btn btn-outline-secondary disabled">! Acknowledged</button>
+                <button type="button" class="btn btn-outline-secondary disabled">Reassign</button>
+                <button type="button" class="btn btn-outline-secondary disabled">Resolved</button>
+                <button type="button" class="btn btn-outline-secondary disabled">Snooze</button>
+            </div>
+
+            <div class="news_panel">
+                <nav class="assign_panel navbar navbar-expand-lg ">
+
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Open <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Triggered</a>
+                        <a class="nav-item nav-link" href="#">Acknowledged</a>
+                        <a class="nav-item nav-link" href="#">Status</a>
+                    </div>
+
+                </nav>
+                <nav class="navbar_second ">
+
+                    <div class="nav">
+                        <input type="checkbox" class="checkbox">
+                        <li>Status</li>
+                        <a class="nav-item nav-link" href="#">Urgency</a>
+                        <li>Title</li>
+                    </div>
+                </nav>
+                <div class="image">
+                    <img src="https://d1qpmdev1yki74.cloudfront.net/assets/images/rebrand/empty-incidents-6272195963a3d31e67976836ded6f46b.svg">
+                    <p class="news_text">No news is good news!</p>
+                </div>
+            </div>
+        </div>
+        <div class="item Rside"><button type="button" class="btn btn-primary btn-lg">+ New Incidents</button>
+            <div class="card card1">
+                <div class="card-body">
+                    <h5 class="card-title">You're always on call</h5>
+                    <hr>
+                    <p class="card-text">You are always on call for</p>
+
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">ON CALL NOW</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <ul>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+            <a href="#">
+                <li>Terms</li>
+            </a>
+            <a href="#">
+                <li>Privacy</li>
+            </a>
+            <a href="#">
+                <li>Cookies</li>
+            </a>
+            <a href="#">
+                <li>Settings</li>
+            </a>
+            <a href="#">
+                <li>Credits</li>
+            </a>
+            <a href="#">
+                <li>Integration Guides</li>
+            </a>
+            <a href="#">
+                <li>Developer API </li>
+            </a>
+            <a href="#">
+                <li>System Status</li>
+            </a>
+
+        </ul>
+    </footer>
 </body>
 
 </html>
